@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-Shop</title>
+  <!-- bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
@@ -20,6 +21,7 @@
 
 <body>
   <header>
+    <!-------------------------- Navbar ----------------------->
     <nav class="navbar navbar-expand-lg navbar-light navBg sticky-top">
       <div class="container">
           <a class="navbar-brand" href="#">
@@ -42,10 +44,12 @@
     </nav>
   </header>
   <main class="main mt-5">
+    <!-------------------------- search box and button ----------------------->
     <div class="input-group mb-3 mt-3 w-25 m-auto">
       <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
       <button class="btn btn-secondary" type="button" id="button-addon2">search</button>
     </div>
+    <!-------------------------- product card and cart ----------------------->
     <section class="mx-5">
       <div class="row">
         <div class="col-md-9 col-lg-9 col-sm-7">
@@ -53,6 +57,7 @@
           <div id="all-products" class="row row-cols-1 row-cols-md-3 g-4">
           </div>
         </div>
+        <!-------------------------- cart ----------------------->
         <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
           <div class="cart" id="my-cart">
             <table class="table">

@@ -8,7 +8,7 @@ const loadProducts = () => {
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
-    // fixed images
+    // fixed images here
     const images = product.image;
     const div = document.createElement("div");
     div.classList.add("col");
@@ -36,12 +36,13 @@ const addToCart = (id, price) => {
 
   updateTaxAndCharge();
   document.getElementById("total-Products").innerText = count;
+  //fixed total cost by firing updateTotal function here
   updateTotal();
 };
 
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
-  //fixed 2 decimal priviously clicked product 
+  //fixed integer type for priviously clicked product 
   const converted = parseFloat(element);
   return converted;
 };
@@ -57,7 +58,7 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  //fixed 2 decimal product tax
+  //fixed 2 decimal product for tax
   document.getElementById(id).innerText = value.toFixed(2);
 };
 
@@ -83,7 +84,6 @@ const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
-    console.log(grandTotal)
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
 loadProducts();
