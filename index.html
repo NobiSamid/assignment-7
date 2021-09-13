@@ -19,69 +19,90 @@
 </head>
 
 <body>
-  <header></header>
-  <main class="main">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light navBg sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+                  <h1>E-Shoper(ঈশপের) Dokan</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#subscribe">Subscribe</a>
+                  </li>
+                  </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main mt-5">
     <div class="input-group mb-3 mt-3 w-25 m-auto">
       <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">search</button>
+      <button class="btn btn-secondary" type="button" id="button-addon2">search</button>
     </div>
     <section class="mx-5">
       <div class="row">
-      <div class="col-md-9 col-lg-9 col-sm-7">
-        <!-- cleared h1 tag -->
-        <div id="all-products" class="">
-        </div>
-      </div>
-      <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
-        <div class="cart" id="my-cart">
-          <table class="table">
-            <thead>
-              <h1>My-Cart</h1>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Total Added-Products:</th>
-                <!-- removed $ sign  -->
-                <td><span id="total-Products">0</span></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Price:</th>
-                <td>$ <span id="price">0</span></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Delivery-Charge:</th>
-                <td>$ <span id="delivery-charge">20</span></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Total-Tax:</th>
-                <td>$ <span id="total-tax">0</span></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">Total</th>
-                <td colspan="2">$ <span id="total">0</span></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+        <div class="col-md-9 col-lg-9 col-sm-7">
+          <!-- cleared h1 tag -->
+          <div id="all-products" class="row row-cols-1 row-cols-md-3 g-4">
           </div>
         </div>
-      </div>
+        <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
+          <div class="cart" id="my-cart">
+            <table class="table">
+              <thead>
+                <h1>My-Cart</h1>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Total Added-Products:</th>
+                  <!-- removed $ sign  -->
+                  <td><span id="total-Products">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Price:</th>
+                  <td>$ <span id="price">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Delivery-Charge:</th>
+                  <td>$ <span id="delivery-charge">20</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Total-Tax:</th>
+                  <td>$ <span id="total-tax">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Total</th>
+                  <td colspan="2">$ <span id="total">0</span></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="parces text-center">
+              <button class="btn btn-primary text-center">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
     </section>
   </main>
